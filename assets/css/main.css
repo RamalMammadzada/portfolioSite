@@ -4,7 +4,63 @@ body {
   box-sizing: border-box;
 }
 
-.container2 {
+.container-phone-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #F2F2F2;
+}
+
+.enddsection {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  background: #F2F2F2;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.footcopy {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+}
+
+.footright {
+  display: flex;
+  gap: 20px;
+}
+
+.terms {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: right;
+  color: #391400;
+}
+
+@media screen and (max-width: 768px) {
+  .sofendsection2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    gap: 5px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container-modern {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -96,7 +152,7 @@ body {
     display: none;
   }
 }
-.container3 {
+.container-images {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -105,7 +161,7 @@ body {
   background: #F2F2F2;
 }
 
-.section2 {
+.section-images {
   display: flex;
   width: 80%;
   flex-direction: column;
@@ -601,7 +657,7 @@ a {
   color: #391400;
 }
 
-.container4 {
+.container-portfolio {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -609,7 +665,7 @@ a {
   flex-direction: column;
   background: #28293E;
 }
-.container4 .section3 .portfolio #responsiveSelect {
+.container-portfolio .section3 .portfolio #responsiveSelect {
   height: 48px;
   width: 329px;
   left: 0px;
@@ -1144,7 +1200,7 @@ a {
   display: flex;
 }
 
-.container5 {
+.container-test {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1751,7 +1807,7 @@ a {
   margin: 0;
 }
 
-.container6 {
+.container-map {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1832,22 +1888,6 @@ a {
   display: flex;
   justify-content: flex-end;
   margin-right: 45px;
-}
-
-.container7 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #F2F2F2;
-}
-
-.enddsection {
-  display: flex;
-  width: 80%;
-  flex-direction: column;
-  background: #F2F2F2;
 }
 
 .phonecards {
@@ -2044,33 +2084,6 @@ a {
   line-height: 32px;
   color: #391400;
   margin: 0;
-}
-
-footer {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.footcopy {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  color: rgba(57, 20, 0, 0.64);
-}
-
-.footright {
-  display: flex;
-  gap: 20px;
-}
-
-.terms {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  text-align: right;
-  color: #391400;
 }
 
 @media screen and (max-width: 768px) {
@@ -2308,11 +2321,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
-  .container4 .section3 .portfolio #responsiveSelect {
+  .container-portfolio .section3 .portfolio #responsiveSelect {
     display: block;
   }
   .MapSec .miniMap {
@@ -2371,13 +2380,6 @@ footer {
   justify-content: center;
   align-items: center;
   text-align-last: center;
-}
-.sectionnew2 .sofendsection2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0;
-  gap: 5px;
 }
 
 .section3new {
@@ -2468,6 +2470,11 @@ footer {
   background: #F2F2F2;
 }
 
+@media screen and (max-width: 768px) {
+  .container-map .mapdiv .pinImg {
+    display: none;
+  }
+}
 .container {
   width: 100%;
   display: flex;
